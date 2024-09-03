@@ -292,7 +292,7 @@ function AutoInstaller(){
     "port= none" | Out-File -FilePath .\Configuration\Configuration.ini -Append -Encoding Ascii
     "" | Out-File -FilePath .\Configuration\Configuration.ini -Append -Encoding Ascii
     "[Settings]" | Out-File -FilePath .\Configuration\Configuration.ini -Append -Encoding Ascii
-    "password= Holmes" | Out-File -FilePath .\Configuration\Configuration.ini -Append -Encoding Ascii
+    "password= Dosuiban" | Out-File -FilePath .\Configuration\Configuration.ini -Append -Encoding Ascii
     "api_key= None" | Out-File -FilePath .\Configuration\Configuration.ini -Append -Encoding Ascii
     "proxy_list= Proxies/Proxy_list.txt" | Out-File -FilePath .\Configuration\Configuration.ini -Append -Encoding Ascii
     "useragent_list= Useragents/Useragent.txt" | Out-File -FilePath .\Configuration\Configuration.ini -Append -Encoding Ascii
@@ -302,7 +302,7 @@ function AutoInstaller(){
     "date_format= eu" | Out-File -FilePath .\Configuration\Configuration.ini -Append -Encoding Ascii
     Write-Host "EMAIL-SERVER:DISABLED`n";
     Write-Host "SHOW-LOGS:FALSE`n";
-    Write-Host "`UPDATE-PASSWORD:Holmes`n";
+    Write-Host "`UPDATE-PASSWORD:Dosuiban`n";
     Write-Host "API-KEY:None`n";
     Write-Host "PROXIES:DEFAULT`n";
     Write-Host "CLI-LANGUAGE:ENGLISH`n";
