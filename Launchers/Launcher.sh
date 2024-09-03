@@ -15,8 +15,8 @@ function Banner {
 }
 
 function Core {
-    printf "${GREEN}\n\n[+]${WHITE}WOULD YOU LIKE TO EXECUTE MR.HOLMES IN:\n(1)NO-ROOT(DATABASE NOT AVAIABLE)\n(2)ROOT(ALL FUNCTIONALITES AVAIABLE)\n(3)EXIT\n\n"
-    read -p"$GREEN[#MR.HOLMES#]$WHITE-->" Choice
+    printf "${GREEN}\n\n[+]${WHITE}WOULD YOU LIKE TO EXECUTE DOSUIBAN IN:\n(1)NO-ROOT(DATABASE NOT AVAIABLE)\n(2)ROOT(ALL FUNCTIONALITES AVAIABLE)\n(3)EXIT\n\n"
+    read -p"$GREEN[#DOSUIBAN#]$WHITE-->" Choice
     while [ $Choice != 3 ];
         do
         if [ $Choice == 1 ];

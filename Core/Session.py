@@ -28,7 +28,7 @@ class Options:
         print(Font.Color.GREEN + "\n[+]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Session", "Printing", "None"))
         sleep(2)
         Options.Printing()
-        choice = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Session", "Question", "None") + Font.Color.GREEN + "[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+        choice = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Session", "Question", "None") + Font.Color.GREEN + "[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
         if choice == 1:
             inp = input(Font.Color.GREEN + "\n[I]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Session", "Changed", "None"))
             python = sys.executable

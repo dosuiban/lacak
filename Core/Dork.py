@@ -23,27 +23,27 @@ class List:
 
     @staticmethod
     def entities(Lists,Mode,Start,Lists2,type1):
-        entity = int(input(Font.Color.BLUE + "\n[I]" + Font.Color.WHITE + "SELECT ENTITY:\n(1)PHONE NUMBER\n(2)WEBSITE\n(3)CUSTOM"+ Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+        entity = int(input(Font.Color.BLUE + "\n[I]" + Font.Color.WHITE + "SELECT ENTITY:\n(1)PHONE NUMBER\n(2)WEBSITE\n(3)CUSTOM"+ Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
         if entity == 1:
-            param = str(input(Font.Color.BLUE + "\n[I]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Dorks", "Param", "None").format(str(Start)) + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+            param = str(input(Font.Color.BLUE + "\n[I]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Dorks", "Param", "None").format(str(Start)) + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
             while param == "":
-                param = str(input(Font.Color.BLUE + "\n[I]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Dorks", "Param", "None").format(str(Start)) + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                param = str(input(Font.Color.BLUE + "\n[I]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Dorks", "Param", "None").format(str(Start)) + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
             print(Font.Color.GREEN + "\n[+]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Dorks", "Added", "None").format(Font.Color.GREEN + param + Font.Color.WHITE))
             param = param + " OR +" + param
         elif entity == 2:
             if type1 != 3:
-                param = str(input(Font.Color.BLUE + "\n[I]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Dorks", "Param", "None").format(str(Start)) + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                param = str(input(Font.Color.BLUE + "\n[I]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Dorks", "Param", "None").format(str(Start)) + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                 while param == "":
-                    param = str(input(Font.Color.BLUE + "\n[I]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Dorks", "Param", "None").format(str(Start)) + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                    param = str(input(Font.Color.BLUE + "\n[I]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Dorks", "Param", "None").format(str(Start)) + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                 print(Font.Color.GREEN + "\n[+]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Dorks", "Added", "None").format(Font.Color.GREEN + param + Font.Color.WHITE))
                 param = "site:" + param + " OR site:www." + param
             else:
                 print(Font.Color.RED + "\n[!]" + Font.Color.WHITE + "YOU HAVE SELECTED A WEBSITE TYPE BEFORE, CANNOT ADD ANOTHER WEBSITE")
                 param = ""
         elif entity == 3:
-            param = str(input(Font.Color.BLUE + "\n[I]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Dorks", "Param", "None").format(str(Start)) + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+            param = str(input(Font.Color.BLUE + "\n[I]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Dorks", "Param", "None").format(str(Start)) + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
             while param == "":
-                param = str(input(Font.Color.BLUE + "\n[I]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Dorks", "Param", "None").format(str(Start)) + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                param = str(input(Font.Color.BLUE + "\n[I]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Dorks", "Param", "None").format(str(Start)) + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
             print(Font.Color.GREEN + "\n[+]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Dorks", "Added", "None").format(Font.Color.GREEN + param + Font.Color.WHITE))
         if param != "":
             if Mode == "Exclude":
@@ -95,7 +95,7 @@ class List:
             os.remove(report)
             print(Font.Color.BLUE + "\n[I]" + Font.Color.WHITE +
                   Language.Translation.Translate_Language(filename, "Default", "Delete", "None").format(username))
-        type1 = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Dorks", "Choice2", "None") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+        type1 = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Dorks", "Choice2", "None") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
         if(type1 == 1 or type1 == 4):
             DorksList = "Site_lists/Dorks/Usernames/Google_dorks.txt"
             DorksList2 = "Site_lists/Dorks/Usernames/Yandex_dorks.txt"
@@ -107,22 +107,22 @@ class List:
         elif(type1 == 3):
             DorksList = "Site_lists/Dorks/Websites/Google_dorks.txt"
             DorksList2 = "Site_lists/Dorks/Websites/Yandex_dorks.txt"
-        add = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Dorks", "Question", "None") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+        add = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Dorks", "Question", "None") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
         data = ""
         while add == "" or add == 0:
-            number = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Dorks", "ParamN", "None") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+            number = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Dorks", "ParamN", "None") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
         if add == 1:
             Start = 1
             Parameters = []
             Parameters2 = []
-            number = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Dorks", "ParamN", "None") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+            number = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Dorks", "ParamN", "None") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
             for i in range(number):
-                type = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Dorks", "Choice", "None") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                type = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Dorks", "Choice", "None") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                 if type == 1:
                     if check == "False":
-                        data = str(input(Font.Color.BLUE + "\n[I]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Dorks", "Date", "None") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                        data = str(input(Font.Color.BLUE + "\n[I]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Dorks", "Date", "None") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                         print(Font.Color.GREEN + "\n[+]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Dorks", "Added2", "None").format(Font.Color.GREEN + data + Font.Color.WHITE))
-                        event = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Dorks", "Event", "None") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                        event = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Dorks", "Event", "None") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                         if event == 1:
                             data = "+before:{}".format(data)
                             data2 = "BEFORE"
@@ -138,9 +138,9 @@ class List:
                     print(Font.Color.GREEN + "\n[+]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Dorks", "Added3", "None").format(Font.Color.GREEN + data2 + Font.Color.WHITE))
                 elif type == 2 :
                     if check == "False":
-                        after = str(input(Font.Color.BLUE + "\n[I]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Dorks", "After", "None") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                        after = str(input(Font.Color.BLUE + "\n[I]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Dorks", "After", "None") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                         print(Font.Color.GREEN + "\n[+]"+ Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Dorks", "Added2", "None").format(Font.Color.GREEN + after + Font.Color.WHITE))
-                        begin = str(input(Font.Color.BLUE + "\n[I]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Dorks", "Before", "None") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                        begin = str(input(Font.Color.BLUE + "\n[I]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Dorks", "Before", "None") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                         print(Font.Color.GREEN + "\n[+]" + Font.Color.WHITE+ Language.Translation.Translate_Language(filename, "Dorks", "Added2", "None").format(Font.Color.GREEN + begin + Font.Color.WHITE))
                         after = "+after:{}".format(after)
                         begin = "before:{}".format(begin)
@@ -190,7 +190,7 @@ class List:
         Notification.Notifier.Start(Mode)
         Creds.Sender.mail(report, username)
         choice = int(input(
-                Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Transfer", "Question", "None") + Font.Color.GREEN + "[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Transfer", "Question", "None") + Font.Color.GREEN + "[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
         if choice == 1:
             FileTransfer.Transfer.File(report,username,".txt") 
         inp = input(Language.Translation.Translate_Language(

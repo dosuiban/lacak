@@ -82,7 +82,7 @@ class info:
                   "ACCOUNT-CREATED ON: {}".format(creation))
 
             download = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Username", "Default", "Profile_Pic").format(
-                username) + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                username) + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
             if download == 1:
                 SiteName = "Imgur"
                 info.Profile_Pic(username, profile_pic, SiteName,Opt,name2)
@@ -259,7 +259,7 @@ class info:
                   "[v]" + Font.Color.WHITE + "PROFILE-PIC: {}".format(profile_pic))
 
             download = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Username", "Default", "Profile_Pic").format(
-                username) + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                username) + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
             if download == 1:
                 SiteName = "MixCloud"
                 info.Profile_Pic(username, profile_pic, SiteName,Opt,name2)
@@ -349,7 +349,7 @@ class info:
                 f.close()
 
             download = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Username", "Default", "Profile_Pic").format(
-                    username) + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                    username) + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
 
             if download == 1:
                     SiteName = "Instagram"
@@ -374,7 +374,7 @@ class info:
         finally:
             if Flag == True:
                 Photos = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Username", "Default", "Pics").format(
-                    username) + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                    username) + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
 
                 if Photos == 1:
                     Posts = float(posts.replace(",", ''))
@@ -453,7 +453,7 @@ class info:
                 print(Font.Color.YELLOW +
                           "[v]" + Font.Color.WHITE + "PRIVATE-ACCOUNT: " + Private)
                 download = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Username", "Default", "Profile_Pic").format(
-                    username) + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                    username) + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
 
                 if download == 1:
                     SiteName = "Twitter"
@@ -495,7 +495,7 @@ class info:
         finally:
             if Flag == True:
                 Photos = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Username", "Default", "Pics").format(
-                    username) + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                    username) + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                 if Photos == 1:
                     Private = "This account&#x27;s tweets are protected."
                     text = openurl.text
@@ -548,7 +548,7 @@ class info:
                   "[v]" + Font.Color.WHITE + "PROFILE-PIC: {}".format(profile_pic))
 
             download = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Username", "Default", "Profile_Pic").format(
-                username) + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                username) + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
 
             if download == 1:
                 SiteName = "DockerHub"
@@ -609,7 +609,7 @@ class info:
                   "[v]" + Font.Color.WHITE + "PROFILE-PIC: {}".format(profile_pic))
 
             download = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Username", "Default", "Profile_Pic").format(
-                username) + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                username) + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
 
             if download == 1:
                 if profile_pic != "None":
@@ -665,7 +665,7 @@ class info:
                   "[v]" + Font.Color.WHITE + "PROFILE-PIC: {}".format(profile_pic))
 
             download = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Username", "Default", "Profile_Pic").format(
-                username) + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                username) + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
 
             if download == 1:
                 SiteName = "GitLab"
@@ -741,7 +741,7 @@ class info:
                   "[v]" + Font.Color.WHITE + "PRIVATE: {}".format(isPrivate))
 
             download = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Username", "Default", "Profile_Pic").format(
-                username) + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                username) + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
 
             if download == 1:
                 SiteName = "Wattpad"
@@ -835,7 +835,7 @@ class info:
                   Font.Color.WHITE + "COMPANY: {}".format(company))
 
             download = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Username", "Default", "Profile_Pic").format(
-                username) + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                username) + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
 
             if download == 1:
                 SiteName = "GitHub"
@@ -921,7 +921,7 @@ class info:
             f.close()
 
             download = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Username", "Default", "Profile_Pic").format(
-                username) + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                username) + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
 
             if download == 1:
                 SiteName = "TikTok"
@@ -942,7 +942,7 @@ class info:
         finally:
             if Flag == True:
                 Video = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Username", "Default", "Pics").format(
-                    username) + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                    username) + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
 
                 if Video == 1:
                     try:
@@ -1012,7 +1012,7 @@ class info:
             f.close()
 
             download = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Username", "Default", "Profile_Pic").format(
-                username) + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                username) + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
 
             if download == 1:
                 SiteName = "Ngl.link"
@@ -1072,7 +1072,7 @@ class info:
                   Font.Color.WHITE + "PROFILE-PIC: {}".format(profile_pic))
 
             download = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Username", "Default", "Profile_Pic").format(
-                username) + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                username) + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
 
             if download == 1:
                 SiteName = "Disqus"
@@ -1124,7 +1124,7 @@ class info:
             f.close()
 
             download = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Username", "Default", "Profile_Pic").format(
-                username) + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                username) + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
 
             if download == 1:
                 SiteName = "Tellonym"
@@ -1200,7 +1200,7 @@ class info:
             f.close()
             
             download = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Username", "Default", "Profile_Pic").format(
-                username) + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                username) + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
 
             if download == 1:
                 SiteName = "Gravatar"
@@ -1369,7 +1369,7 @@ class info:
             f.close()
             
             download = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Username", "Default", "Profile_Pic").format(
-                username) + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                username) + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
             if profile_pic != "None":
                   if download == 1:
                         SiteName = "Chess.com"

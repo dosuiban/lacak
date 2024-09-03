@@ -35,7 +35,7 @@
         "KeyC": "IL SEMBLE QUE VOUS AVEZ APPUYÉ SUR CTRL-C QUITTER...",
         "Map": "MAP ENREGISTRÉE DANS: {}",
         "DateFormat": "FORMAT-DE-DATE:{}",
-        "Generated": "MAP GENERÉE PAR MR.HOLMES",
+        "Generated": "MAP GENERÉE PAR DOSUIBAN",
         "DisplayError": "OPTION INVALIDE DANS Display/UNTILED.txt // SPÉCIFIEZ 'Desktop' OU 'Mobile'\n\nQUITTER..."
     },
 
@@ -81,7 +81,7 @@
         "Port": "ENTREZ UN HOST A SCANNER",
         "Email": "ENTREZ UN E-MAIL",
         "Param": "ENTREZ UN PARAMETRE",
-        "Exit": "\nMERCI BEAUCOUP POUR AVOIR UTILISER MR.HOLMES.. BYE:)\n",
+        "Exit": "\nMERCI BEAUCOUP POUR AVOIR UTILISER DOSUIBAN.. BYE:)\n",
         "Value_Error": "OUPS! VOUS AVEZ CHOISI UNE MAUVAISE OPTION EXIT..."
     },
 
@@ -365,9 +365,9 @@
         "Wrong": "MAUVAIS MOT DE PASSE. TU AS {} TENTATIVES",
         "Failed": "TU AS {} TENTATIVES. TAPEZ ENTRÉE POUR CONTINUER",
         "Choice": "VOULEZ VOUS SUPPRIMER LES ANCIENS FICHIERS?(1)OUI(2)NO\n\n",
-        "Delete": "\nMR.HOLMES: LES ANCIENS FICHIERS ONT ÉTÉ SUPPRIMER",
-        "Keep": "\nMR.HOLMES : LES ANCIENS FICHIERS SONT MAINTENUS",
-        "Success": "\nMR.HOLMES :  MIS A JOUR OK"
+        "Delete": "\nDOSUIBAN: LES ANCIENS FICHIERS ONT ÉTÉ SUPPRIMER",
+        "Keep": "\nDOSUIBAN : LES ANCIENS FICHIERS SONT MAINTENUS",
+        "Success": "\nDOSUIBAN :  MIS A JOUR OK"
     },
 
     "Decoding":{
@@ -401,7 +401,7 @@
         {
             "Default":{
                 "Date": "SCAN EFFECTUÉ LE:\n{}",
-                "By": "\nSCANNING EFFECTUÉ AVEC MR.HOLMES"
+                "By": "\nSCANNING EFFECTUÉ AVEC DOSUIBAN"
             },
 
             "Username":{

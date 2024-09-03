@@ -141,7 +141,7 @@ class Phone_search:
                   Language.Translation.Translate_Language(filename, "Phone", "Search", "None").format(number))
 
             sc = int(input(
-                Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Default", "choice", "None") + Font.Color.GREEN + "[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Default", "choice", "None") + Font.Color.GREEN + "[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
             if sc == 1:
                 http_proxy = Proxies.proxy.final_proxis
                 http_proxy2 = Proxies.proxy.choice3
@@ -219,7 +219,7 @@ class Phone_search:
 
         sleep(3)
         dork = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Default", "Dorks", "None") +
-                   Font.Color.GREEN + "[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                   Font.Color.GREEN + "[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
         if dork == 1:
             print(Font.Color.GREEN + "[+]" + Font.Color.WHITE + "NORMAL FORMAT:")
             Phone_search.Google_dork(username,username)
@@ -269,7 +269,7 @@ class Phone_search:
         Notification.Notifier.Start(Mode)
         Creds.Sender.mail(report, username)
         choice = int(input(
-                Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Transfer", "Question", "None") + Font.Color.GREEN + "[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Transfer", "Question", "None") + Font.Color.GREEN + "[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
         if choice == 1:
             FileTransfer.Transfer.File(report,username,".txt")
         Encoding.Encoder.Encode(report)

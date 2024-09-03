@@ -19,7 +19,7 @@ class Encoder:
     def Decode(report):
         if os.path.isfile(report):
             quest = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(
-                            filename, "Decoding", "Decode", "None") +  Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                            filename, "Decoding", "Decode", "None") +  Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
             if quest == 1:
                 EncodedFile = report.replace(".mh",".txt")
                 f = open(report,"r+",encoding="utf-8")
@@ -45,7 +45,7 @@ class Encoder:
     def Encode(report):
         if os.path.isfile(report):
             quest = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(
-                            filename, "Default", "Encode", "None") +  Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                            filename, "Default", "Encode", "None") +  Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
             if quest == 1:
                 EncodedFile = report.replace(".txt",".mh")
                 f = open(report,"r+")

@@ -100,7 +100,7 @@ class Downloader:
                 Opt, name2)
             if os.path.isdir(folder):
                 keep = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE +
-                                 Language.Translation.Translate_Language(LangFile, "Username", "Instagram", "FoldFound") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                                 Language.Translation.Translate_Language(LangFile, "Username", "Instagram", "FoldFound") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                 if keep == 1:
                     shutil.rmtree(folder)
                     os.mkdir(folder)
@@ -109,7 +109,7 @@ class Downloader:
             else:
                 os.mkdir(folder)
             details = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE +
-                                Language.Translation.Translate_Language(LangFile, "Username", "Default", "Details") + Font.Color.GREEN + "[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                                Language.Translation.Translate_Language(LangFile, "Username", "Default", "Details") + Font.Color.GREEN + "[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
             openurl = requests.get(
                 url, proxies=http_proxy, headers=headers, allow_redirects=True)
             reader = soup(openurl.content, "html.parser")
@@ -443,7 +443,7 @@ class Downloader:
             if os.path.isdir(folder):
                 shutil.rmtree(folder)
             os.mkdir(folder)
-            medias = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(LangFile,"Username","Twitter","MediaOnly") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+            medias = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(LangFile,"Username","Twitter","MediaOnly") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
             if medias == 1:
                 url = url + "/media"
                 param = "/media"
@@ -741,7 +741,7 @@ class Downloader:
                 Opt, name2)
             if os.path.isdir(folder):
                 keep = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE +
-                                 Language.Translation.Translate_Language(LangFile, "Username", "TikTok", "FoldFound") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                                 Language.Translation.Translate_Language(LangFile, "Username", "TikTok", "FoldFound") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                 if keep == 1:
                     shutil.rmtree(folder)
                     os.mkdir(folder)

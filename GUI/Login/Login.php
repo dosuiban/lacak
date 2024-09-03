@@ -16,7 +16,7 @@ License: GNU General Public License v3.0-->
             $File_Name = "Login.css";
             Body_Theme($File_Name);
         ?>
-        <link rel = "icon" href = "../Icon/Mr.Holmes.png">
+        <link rel = "icon" href = "../Icon/DOSUIBAN.png">
         <meta charset ="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=0.9">
         <meta name="theme-color" content="#000000">
@@ -27,7 +27,7 @@ License: GNU General Public License v3.0-->
         Get_Language($Modality);
     ?>
         <div class = "Top-bar">
-            <p>MR.HOLMES</p>
+            <p>DOSUIBAN</p>
             <div class = "languages">
                 <button id = "Current" onclick="Active_Language()">English</button>
                 <div class = "Content" id = "Content">

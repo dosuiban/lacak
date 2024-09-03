@@ -28,7 +28,7 @@ class Menu:
         Menu.Banner(Mode)
         print(Font.Color.BLUE + "\n[I]" + Font.Color.WHITE + "INFO:" + "[{}]".format(Font.Color.GREEN + Language.Translation.Translate_Language(filename,"Transfer","Explanation","None") + Font.Color.WHITE) )
         folder = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(
-                        filename, "Transfer", "Folder", "None").format(Font.Color.GREEN + username + Font.Color.WHITE)  + Font.Color.GREEN + "[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                        filename, "Transfer", "Folder", "None").format(Font.Color.GREEN + username + Font.Color.WHITE)  + Font.Color.GREEN + "[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
         if folder == 1:
             fold = "Usernames"
             secondFold = "True"
@@ -62,7 +62,7 @@ class Menu:
             holmes.Main.Menu(Mode)
         if folder == 1 or folder == 4:
             choice = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(
-                        filename, "Decoding", "Type", "None").format(username)  + Font.Color.GREEN + "[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                        filename, "Decoding", "Type", "None").format(username)  + Font.Color.GREEN + "[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
             username= username.replace(" ","_")
             if choice == 1:
                 report = username
@@ -86,7 +86,7 @@ class Menu:
             Report = "GUI/PDF/{}".format(report)
         if secondFold != "Exception":
             option = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(
-                        filename, "Transfer", "Type", "None") + Font.Color.GREEN + "[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                        filename, "Transfer", "Type", "None") + Font.Color.GREEN + "[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
             if option == 1:
                 report = Report + ".txt"
                 extension = ".txt"

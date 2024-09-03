@@ -21,7 +21,7 @@ class One_time:
         filename
         try:
             choice = str(input(Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Eula", "Text", "None") +
-                         Font.Color.GREEN + "(Y)" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Eula", "Agree", "None") + Font.Color.RED + "(N)" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Eula", "Disagree", "None") + Font.Color.GREEN + "[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                         Font.Color.GREEN + "(Y)" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Eula", "Agree", "None") + Font.Color.RED + "(N)" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Eula", "Disagree", "None") + Font.Color.GREEN + "[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
             if choice == "Y" or choice == "y":
                 f = open("Configuration/Agreement.txt", "w")
                 f.write("Agreement Accepted")

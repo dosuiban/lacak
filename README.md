@@ -3,18 +3,18 @@
 </p>
 
 <p align = "center">
-  <img src = "https://img.shields.io/github/stars/Lucksi/Mr.Holmes">
-  <img src = "https://img.shields.io/github/forks/Lucksi/Mr.Holmes">
+  <img src = "https://img.shields.io/github/stars/Lucksi/DOSUIBAN">
+  <img src = "https://img.shields.io/github/forks/Lucksi/DOSUIBAN">
   <img src = "https://img.shields.io/badge/Maintained%3F-yes-green.svg">
-  <img src = "https://img.shields.io/github/license/Lucksi/Mr.Holmes">
-  <img src = "https://img.shields.io/github/repo-size/Lucksi/Mr.Holmes">
-  <img src= "https://img.shields.io/github/languages/count/Lucksi/Mr.Holmes">
-  <img src = "https://visitor-badge.laobi.icu/badge?page_id=Lucksi.Mr.Holmes">
+  <img src = "https://img.shields.io/github/license/Lucksi/DOSUIBAN">
+  <img src = "https://img.shields.io/github/repo-size/Lucksi/DOSUIBAN">
+  <img src= "https://img.shields.io/github/languages/count/Lucksi/DOSUIBAN">
+  <img src = "https://visitor-badge.laobi.icu/badge?page_id=Lucksi.DOSUIBAN">
 </p>
 
-# :mag: Mr.Holmes 
+# :mag: DOSUIBAN 
 
-**Mr.Holmes is a information gathering tool (OSINT). The main purpose is to gain information about domains,username and phone numbers with the help of public source avaiable on the internet also it use the google dorks attack for specific researchers. It also use proxies for make your requests completley anonymous and a WhoIS Api for getting more information about a domain.**
+**DOSUIBAN is a information gathering tool (OSINT). The main purpose is to gain information about domains,username and phone numbers with the help of public source avaiable on the internet also it use the google dorks attack for specific researchers. It also use proxies for make your requests completley anonymous and a WhoIS Api for getting more information about a domain.**
 <br>
 
 # :heavy_exclamation_mark: DISCLAIMER
@@ -34,8 +34,8 @@
 
 # :heavy_check_mark: INSTALLATION LINUX/MAC:
 ```bash
-git clone https://github.com/Lucksi/Mr.Holmes
-cd Mr.Holmes
+git clone https://github.com/Lucksi/DOSUIBAN
+cd DOSUIBAN
 sudo apt-get update
 sudo chmod +x install.sh
 sudo bash install.sh
@@ -45,9 +45,9 @@ sudo bash install.sh
 # :heavy_check_mark: INSTALLATION LINUX/MAC (Venv Enviroment):
 **if you encounter some errors in the python libraries installation use this method**
 ```bash
-git clone https://github.com/Lucksi/Mr.Holmes
+git clone https://github.com/Lucksi/DOSUIBAN
 sudo apt-get update
-cd Mr.Holmes
+cd DOSUIBAN
 python3 -m venv .lib_venv
 sudo chmod +x install.sh
 sudo bash install.sh
@@ -60,17 +60,17 @@ python3 MrHolmes.py
 # :heavy_check_mark: INSTALLATION WINDOWS (1°WAY)
 **If you have git installed on your windows machine you can do the following commands:**
 ```cmd
-git clone https://github.com/Lucksi/Mr.Holmes
-cd Mr.Holmes
+git clone https://github.com/Lucksi/DOSUIBAN
+cd DOSUIBAN
 Install.cmd
 ```
 <br>
 
 # :heavy_check_mark: INSTALLATION WINDOWS (2° WAY):
-**If you download the zip file of Mr.Holmes you should first unzip it and after that do the following commands:**
+**If you download the zip file of DOSUIBAN you should first unzip it and after that do the following commands:**
 ```cmd
-ren Mr.Holmes-master Mr.Holmes
-cd Mr.Holmes
+ren DOSUIBAN-master DOSUIBAN
+cd DOSUIBAN
 Install.cmd
 ```
 <br>
@@ -78,25 +78,25 @@ Install.cmd
 # :heavy_check_mark: INSTALLATION TERMUX:
 ```bash
 pkg install proot
-git clone https://github.com/Lucksi/Mr.Holmes
-cd Mr.Holmes
+git clone https://github.com/Lucksi/DOSUIBAN
+cd DOSUIBAN
 proot -0 chmod +x install_Termux.sh
 ./install_Termux.sh
 ```
 <br>
 
 #  USAGE LINUX/MAC:
-    cd Mr.Holmes
+    cd DOSUIBAN
     sudo python3 MrHolmes.py
     OR:
-    cd Mr.Holmes
+    cd DOSUIBAN
     cd Launchers
     Execute Launcher.sh
 
 <br>
     
 #  USAGE LINUX/MAC(Venv Enviroment):
-    cd Mr.Holmes
+    cd DOSUIBAN
     source .lib_venv/bin/activate
     python3 MrHolmes.py
 
@@ -133,7 +133,7 @@ proot -0 chmod +x install_Termux.sh
 <br>
 
 # VERSIONS LIST:
-    https://lucksi.github.io/Mr.Holmes/Pages/versions.html
+    https://lucksi.github.io/DOSUIBAN/Pages/versions.html
 <br>
 
 # :heavy_check_mark: GUI DARK/LIGHT MODE:
@@ -367,7 +367,7 @@ edit Language.json
 ## <p align = center> STARGAZERS OVER TIME 
 
 
-[![Stargazers over time](https://starchart.cc/Lucksi/Mr.Holmes.svg)](https://starchart.cc/Lucksi/Mr.Holmes)
+[![Stargazers over time](https://starchart.cc/Lucksi/DOSUIBAN.svg)](https://starchart.cc/Lucksi/DOSUIBAN)
 
 <br>
 

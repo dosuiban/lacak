@@ -41,18 +41,18 @@ class Port:
         print(Font.Color.GREEN +
               "[+]" + Font.Color.WHITE + "{} IP: {}".format(username, Server))
         nPorts = int(input(Font.Color.BLUE + "\n[+]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Ports", "Text", "None") +
-                     Font.Color.GREEN + "[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                     Font.Color.GREEN + "[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
         if nPorts == 1:
             Min = int(input(Font.Color.BLUE + "\n[+]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Ports", "Pstart", "None") +
-                            Font.Color.GREEN + "[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                            Font.Color.GREEN + "[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
             while Min == "":
                 Min = int(input(Font.Color.BLUE + "\n[+]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Ports", "Pstart", "None") +
-                                Font.Color.GREEN + "[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                                Font.Color.GREEN + "[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
             Max2 = int(input(Font.Color.BLUE + "\n[+]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Ports", "Pfinish", "None") +
-                             Font.Color.GREEN + "[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                             Font.Color.GREEN + "[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
             while Max2 == "":
                 Max2 = int(input(Font.Color.BLUE + "\n[+]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Ports", "Pfinish", "None") +
-                                 Font.Color.GREEN + "[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                                 Font.Color.GREEN + "[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
             Max = Max2 + 1
             Def = True
         elif nPorts == 2:
@@ -65,16 +65,16 @@ class Port:
             Def = False
             i = 0
             amount = int(input(Font.Color.BLUE + "\n[+]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Ports", "Amounts", "None") +
-                               Font.Color.GREEN + "[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                               Font.Color.GREEN + "[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
             while amount == "":
                 amount = int(input(Font.Color.BLUE + "\n[+]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Ports", "Amounts", "None") +
-                                   Font.Color.GREEN + "[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                                   Font.Color.GREEN + "[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
             for i in range(amount):
                 port = int(input(Font.Color.BLUE + "\n[+]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Ports", "Number", "None") +
-                                 Font.Color.GREEN + "[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                                 Font.Color.GREEN + "[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                 while port == "":
                     port = int(input(Font.Color.BLUE + "\n[+]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Ports", "Number", "None") +
-                                     Font.Color.GREEN + "[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                                     Font.Color.GREEN + "[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                 Ports_List.append(port)
         elif nPorts == 4:
             inp = input(Language.Translation.Translate_Language(filename,"Configuration","Main","Exit"))

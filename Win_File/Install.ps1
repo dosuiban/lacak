@@ -16,9 +16,9 @@ function Packet_Installer(){
 }
 
 function Preferences(){
-    $Language = Read-Host -Prompt "`nSELECT YOUR GUI-DEFAULT LANGUAGE`n(1)ENGLISH`n(2)ITALIANO`n(3)FRANCAIS`n`n[#MR.HOLMES#]-->"
+    $Language = Read-Host -Prompt "`nSELECT YOUR GUI-DEFAULT LANGUAGE`n(1)ENGLISH`n(2)ITALIANO`n(3)FRANCAIS`n`n[#DOSUIBAN#]-->"
     while($Language -eq ""){
-        $Color = Read-Host -Prompt "`nSELECT YOUR GUI-DEFAULT LANGUAGE`n(1)ENGLISH`n(2)ITALIANO`n(3)FRANCAIS`n`n[#MR.HOLMES#]-->"
+        $Color = Read-Host -Prompt "`nSELECT YOUR GUI-DEFAULT LANGUAGE`n(1)ENGLISH`n(2)ITALIANO`n(3)FRANCAIS`n`n[#DOSUIBAN#]-->"
     }
     if($Language -eq 1){
         '{
@@ -46,9 +46,9 @@ function Preferences(){
     }
 
     Write-Host "`nGUI-LANGUAGE:$mode"
-    $Color = Read-Host -Prompt "`nSELECT YOUR GUI-DEFAULT THEME`n(1)LIGHT`n(2)DARK`n(3)HIGH-CONTRAST`n`n[#MR.HOLMES#]-->"
+    $Color = Read-Host -Prompt "`nSELECT YOUR GUI-DEFAULT THEME`n(1)LIGHT`n(2)DARK`n(3)HIGH-CONTRAST`n`n[#DOSUIBAN#]-->"
     while($Color -eq ""){
-        $Color = Read-Host -Prompt "`nSELECT YOUR GUI-DEFAULT THEME`n(1)LIGHT`n(2)DARK`n(3)HIGH-CONTRAST`n`n[#MR.HOLMES#]-->"
+        $Color = Read-Host -Prompt "`nSELECT YOUR GUI-DEFAULT THEME`n(1)LIGHT`n(2)DARK`n(3)HIGH-CONTRAST`n`n[#DOSUIBAN#]-->"
     }
     if($Color -eq 1){
         '{
@@ -78,31 +78,31 @@ function Preferences(){
 }
 
 function Mail_Options(){
-    $Opt = Read-Host -Prompt "`nWOULD YOU LIKE TO ENABLE EMAIL-OPTION(1)YES(2)NO`n`n[#MR.HOLMES#]-->"
+    $Opt = Read-Host -Prompt "`nWOULD YOU LIKE TO ENABLE EMAIL-OPTION(1)YES(2)NO`n`n[#DOSUIBAN#]-->"
     while($Opt -eq ""){
-        $Email = Read-Host -Prompt "`nWOULD YOU LIKE TO ENABLE EMAIL-OPTION(1)YES(2)NO`n`n[#MR.HOLMES#]-->"
+        $Email = Read-Host -Prompt "`nWOULD YOU LIKE TO ENABLE EMAIL-OPTION(1)YES(2)NO`n`n[#DOSUIBAN#]-->"
     }
     if ($Opt -eq 1){
         $Status = "Enabled"
-        $Email = Read-Host -Prompt "`nINSERT YOUR EMAIL ADDRESS`n`n[#MR.HOLMES#]-->"
+        $Email = Read-Host -Prompt "`nINSERT YOUR EMAIL ADDRESS`n`n[#DOSUIBAN#]-->"
         while($Email -eq ""){
-            $Email = Read-Host -Prompt "`nINSERT YOUR EMAIL ADDRESS`n`n[#MR.HOLMES#]-->"
+            $Email = Read-Host -Prompt "`nINSERT YOUR EMAIL ADDRESS`n`n[#DOSUIBAN#]-->"
         }
-        $Password = Read-Host -Prompt "`nINSERT YOUR EMAIL PASSWORD`n`n[#MR.HOLMES#]-->"
+        $Password = Read-Host -Prompt "`nINSERT YOUR EMAIL PASSWORD`n`n[#DOSUIBAN#]-->"
         while($Password -eq ""){
-            $Password = Read-Host -Prompt "`nINSERT YOUR EMAIL PASSWORD`n`n[#MR.HOLMES#]-->"
+            $Password = Read-Host -Prompt "`nINSERT YOUR EMAIL PASSWORD`n`n[#DOSUIBAN#]-->"
         }
-        $Destination = Read-Host -Prompt "`nINSERT YOUR DESTINATION EMAIL`n`n[#MR.HOLMES#]-->"
+        $Destination = Read-Host -Prompt "`nINSERT YOUR DESTINATION EMAIL`n`n[#DOSUIBAN#]-->"
         while($Destination -eq ""){
-            $Destination = Read-Host -Prompt "`nINSERT YOUR DESTINATION EMAIL`n`n[#MR.HOLMES#]-->"
+            $Destination = Read-Host -Prompt "`nINSERT YOUR DESTINATION EMAIL`n`n[#DOSUIBAN#]-->"
         }
-        $Server = Read-Host -Prompt "`nINSERT YOUR SMTP-SERVER`n`n[#MR.HOLMES#]-->"
+        $Server = Read-Host -Prompt "`nINSERT YOUR SMTP-SERVER`n`n[#DOSUIBAN#]-->"
         while($Server -eq ""){
-            $Server = Read-Host -Prompt "`nINSERT YOUR SMTP-SERVER`n`n[#MR.HOLMES#]-->"
+            $Server = Read-Host -Prompt "`nINSERT YOUR SMTP-SERVER`n`n[#DOSUIBAN#]-->"
         }
-        $Port = Read-Host -Prompt "`nINSERT YOUR SMTP SERVER-PORT`n`n[#MR.HOLMES#]-->"
+        $Port = Read-Host -Prompt "`nINSERT YOUR SMTP SERVER-PORT`n`n[#DOSUIBAN#]-->"
         while($Port -eq ""){
-            $Port = Read-Host -Prompt "`nINSERT YOUR SMTP SERVER-PORT`n`n[#MR.HOLMES#]-->"
+            $Port = Read-Host -Prompt "`nINSERT YOUR SMTP SERVER-PORT`n`n[#DOSUIBAN#]-->"
         }
     }
     elseif($Opt -eq 2){
@@ -120,25 +120,25 @@ function Mail_Options(){
 }
 
 function Options(){
-    $Update_Password = Read-Host -Prompt "`nINSERT YOUR UPDATE PASSWORD`n`n[#MR.HOLMES#]-->"
+    $Update_Password = Read-Host -Prompt "`nINSERT YOUR UPDATE PASSWORD`n`n[#DOSUIBAN#]-->"
     while($Update_Password -eq ""){
-        $Update_Password = Read-Host -Prompt "`nINSERT YOUR UPDATE PASSWORD`n`n[#MR.HOLMES#]-->"
+        $Update_Password = Read-Host -Prompt "`nINSERT YOUR UPDATE PASSWORD`n`n[#DOSUIBAN#]-->"
     }
-    $Api = Read-Host -Prompt "`nINSERT YOUR WHOIS API KEY 'LEAVE EMPTY IF YOU HAVENT ONE'`n`n[#MR.HOLMES#]-->"
+    $Api = Read-Host -Prompt "`nINSERT YOUR WHOIS API KEY 'LEAVE EMPTY IF YOU HAVENT ONE'`n`n[#DOSUIBAN#]-->"
     if($Api -eq ""){
         $Api = "None"
     }
-    $Proxy_List = Read-Host -Prompt "`nINSERT YOUR PROXY-LIST 'LEAVE EMPTY FOR USE THE DEFAULT ONE'`n`n[#MR.HOLMES#]-->"
+    $Proxy_List = Read-Host -Prompt "`nINSERT YOUR PROXY-LIST 'LEAVE EMPTY FOR USE THE DEFAULT ONE'`n`n[#DOSUIBAN#]-->"
     if($Proxy_List -eq ""){
         $Proxy_List = "Proxies/Proxy_list.txt"
     }
-    $Useragent_List = Read-Host -Prompt "`nINSERT YOUR USERAGENT-LIST 'LEAVE EMPTY FOR USE THE DEFAULT ONE'`n`n[#MR.HOLMES#]-->"
+    $Useragent_List = Read-Host -Prompt "`nINSERT YOUR USERAGENT-LIST 'LEAVE EMPTY FOR USE THE DEFAULT ONE'`n`n[#DOSUIBAN#]-->"
     if($Useragent_List -eq ""){
         $Useragent_List = "Useragents/Useragent.txt"
     }
-    $Log_Session = Read-Host -Prompt "`nWOULD YOU LIKE TO SAVE YOUR LOG SESSION(1)YES(2)NO`n`n[#MR.HOLMES#]-->"
+    $Log_Session = Read-Host -Prompt "`nWOULD YOU LIKE TO SAVE YOUR LOG SESSION(1)YES(2)NO`n`n[#DOSUIBAN#]-->"
     while ($Log_Session -eq ""){
-        $Log_Session = Read-Host -Prompt "`nWOULD YOU LIKE TO SAVE YOUR LOG SESSION(1)YES(2)NO`n`n[#MR.HOLMES#]-->"
+        $Log_Session = Read-Host -Prompt "`nWOULD YOU LIKE TO SAVE YOUR LOG SESSION(1)YES(2)NO`n`n[#DOSUIBAN#]-->"
     }
     if($Log_Session -eq 1){
         $Log_Session = "True"
@@ -146,16 +146,16 @@ function Options(){
     elseif($Log_Session -eq 2) {
         $Log_Session = "False"
     }
-    $Token = Read-Host -Prompt "`nWOULD YOU LIKE TO ACCESS YOUR DATABASE ON OTHER DEVICES(ON THE SAME NETWORK)?(1)YES(2)NO`n`n[#MR.HOLMES#]-->"
+    $Token = Read-Host -Prompt "`nWOULD YOU LIKE TO ACCESS YOUR DATABASE ON OTHER DEVICES(ON THE SAME NETWORK)?(1)YES(2)NO`n`n[#DOSUIBAN#]-->"
     if($Token -eq 1){
         $Token = "True"
     }
     elseif ($Token -eq 2) {
         $Token = "False"
     }
-    $Access = Read-Host -Prompt "`nWOULD YOU LIKE TO ADD SOME CREDENTIALS FOR ACCESS THE DATABASE?(1)YES(2)NO`n`n[#MR.HOLMES]-->"
+    $Access = Read-Host -Prompt "`nWOULD YOU LIKE TO ADD SOME CREDENTIALS FOR ACCESS THE DATABASE?(1)YES(2)NO`n`n[#DOSUIBAN]-->"
     while($Access -eq ""){
-        $Access = Read-Host -Prompt "`nWOULD YOU LIKE TO ADD SOME CREDENTIALS FOR ACCESS THE DATABASE?(1)YES(2)NO`n`n[#MR.HOLMES]-->"
+        $Access = Read-Host -Prompt "`nWOULD YOU LIKE TO ADD SOME CREDENTIALS FOR ACCESS THE DATABASE?(1)YES(2)NO`n`n[#DOSUIBAN]-->"
     }
     if ($Access -eq 1){
         $Access = "True"
@@ -194,9 +194,9 @@ function Options(){
             ]
         }' | Out-File -FilePath .\GUI\Credentials\Users.json -Encoding Ascii
     }
-    $Lang = Read-Host -Prompt "`nINSERT YOUR CLI-LANGUAGE`n(1)ENGLISH`n(2)ITALIANO`n(3)FRANCAIS`n`n[#MR.HOLMES#]-->"
+    $Lang = Read-Host -Prompt "`nINSERT YOUR CLI-LANGUAGE`n(1)ENGLISH`n(2)ITALIANO`n(3)FRANCAIS`n`n[#DOSUIBAN#]-->"
     while($Lang -eq ""){
-        $Lang = Read-Host -Prompt "`nINSERT YOUR CLI-LANGUAGE`n(1)ENGLISH`n(2)ITALIANO`n(3)FRANCAIS`n`n[#MR.HOLMES#]-->"
+        $Lang = Read-Host -Prompt "`nINSERT YOUR CLI-LANGUAGE`n(1)ENGLISH`n(2)ITALIANO`n(3)FRANCAIS`n`n[#DOSUIBAN#]-->"
     }
     if($Lang -eq 1){
         $Cli = "english"
@@ -211,9 +211,9 @@ function Options(){
         $Mode = "FRANCAIS"
     }
     Write-Host "`nCLI-LANGUAGE:$Mode"
-    $DateFormat = Read-Host -Prompt "`nSELECT YOUR DATE-FORMAT`n(1)EUROPE(DD/MM/YYYY)`n(2)AMERICA'USA'(MM/DD/YYYY)`n(3)ASIA(YYYY/MM/DD)`n`n[#MR.HOLMES#]-->"
+    $DateFormat = Read-Host -Prompt "`nSELECT YOUR DATE-FORMAT`n(1)EUROPE(DD/MM/YYYY)`n(2)AMERICA'USA'(MM/DD/YYYY)`n(3)ASIA(YYYY/MM/DD)`n`n[#DOSUIBAN#]-->"
     while($DateFormat -eq ""){
-        $DateFormat = Read-Host -Prompt "`nSELECT YOUR DATE-FORMAT`n(1)EUROPE(DD/MM/YYYY)`n(2)AMERICA'USA'(MM/DD/YYYY)`n(3)ASIA(YYYY/MM/DD)`n`n[#MR.HOLMES#]-->"
+        $DateFormat = Read-Host -Prompt "`nSELECT YOUR DATE-FORMAT`n(1)EUROPE(DD/MM/YYYY)`n(2)AMERICA'USA'(MM/DD/YYYY)`n(3)ASIA(YYYY/MM/DD)`n`n[#DOSUIBAN#]-->"
     }
     if($DateFormat -eq 1){
         $Date = "eu"
@@ -229,7 +229,7 @@ function Options(){
     }
     Write-Host "`nDATE-FORMAT:$Mode"
     Preferences;
-    ";THIS FILE HAS BEEN GENERATE BY MR.HOLMES INSTALLER" | Out-File -FilePath .\Configuration/Configuration.ini -Encoding Ascii
+    ";THIS FILE HAS BEEN GENERATE BY DOSUIBAN INSTALLER" | Out-File -FilePath .\Configuration/Configuration.ini -Encoding Ascii
     ";CHANGE THESE VALUE IF YOU WANT TO UPDATE YOUR SETTINGS FROM HERE" | Out-File -FilePath .\Configuration/Configuration.ini -Append -Encoding Ascii
     ";BUT DO NOT CHANGE THE PARAMETERS NAME" | Out-File -FilePath .\Configuration\Configuration.ini -Append -Encoding Ascii
     "" | Out-File -FilePath .\Configuration\Configuration.ini -Append -Encoding Ascii
@@ -279,7 +279,7 @@ function AutoInstaller(){
             }
     }' | Out-File -FilePath .\GUI\Theme\Mode.json -Encoding Ascii
     Write-Host "`nCREATING CONFIGURATION FILE...`n";
-    ";THIS FILE HAS BEEN GENERATE BY MR.HOLMES INSTALLER" | Out-File -FilePath .\Configuration/Configuration.ini -Encoding Ascii
+    ";THIS FILE HAS BEEN GENERATE BY DOSUIBAN INSTALLER" | Out-File -FilePath .\Configuration/Configuration.ini -Encoding Ascii
     ";CHANGE THESE VALUE IF YOU WANT TO UPDATE YOUR SETTINGS FROM HERE" | Out-File -FilePath .\Configuration/Configuration.ini -Append -Encoding Ascii
     ";BUT DO NOT CHANGE THE PARAMETERS NAME" | Out-File -FilePath .\Configuration\Configuration.ini -Append -Encoding Ascii
     "" | Out-File -FilePath .\Configuration\Configuration.ini -Append -Encoding Ascii
@@ -313,10 +313,10 @@ function AutoInstaller(){
 
 function installer(){
     Write-Host "`nWELCOME TO THE INSTALLATION MANAGER WOULD YOU LIKE TO BEGIN(1)YES(2)NO?" -ForegroundColor Green
-    $DECISION = Read-Host -Prompt "`n[#MR.HOLMES#]-->"
+    $DECISION = Read-Host -Prompt "`n[#DOSUIBAN#]-->"
     if ( $DECISION -eq 1 ){
         Write-Host "`nWOULD YOU LIKE TO SET(1)MANUAL-INSTALLATION(2)AUTO-INSTALLATION?" -ForegroundColor Green
-        $DECISION2 = Read-Host -Prompt "`n[#MR.HOLMES#]-->"
+        $DECISION2 = Read-Host -Prompt "`n[#DOSUIBAN#]-->"
         if ( $DECISION2 -eq 1 ){
             Packet_Installer;
             Mail_Options;
@@ -327,7 +327,7 @@ function installer(){
         }
         Write-Host "INSTALLING-PYTHON-REQUIREMENTS..." -ForegroundColor Blue
         Start-Process -FilePath .\Win_File\Req.cmd
-        Write-Host "`nTHANK YOU FOR HAVE INSTALLED Mr.Holmes" -ForegroundColor Green
+        Write-Host "`nTHANK YOU FOR HAVE INSTALLED DOSUIBAN" -ForegroundColor Green
     }
     else{
         Write-Host "`nINSTALLATION INTERRUPTED...EXIT" -ForegroundColor Green

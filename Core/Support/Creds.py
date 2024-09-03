@@ -31,7 +31,7 @@ class Sender:
             destination = Parser["Smtp"]["destination"]
             if Regex.fullmatch(simbols, email) and Regex.fullmatch(simbols, destination):
                 mail = int(input(
-                    Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(LangFile, "RecapEmail", "Sender", "None") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                    Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(LangFile, "RecapEmail", "Sender", "None") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                 if mail == 1:
                     print(
                         Font.Color.GREEN + "\n[+]" + Font.Color.WHITE + Language.Translation.Translate_Language(LangFile, "RecapEmail", "InProgress", "None"))
@@ -43,7 +43,7 @@ class Sender:
                     port = Parser["Smtp"]["port"]
                     port2 = (int(port))
                     message = MIMEMultipart()
-                    message['From'] = "MR.HOLMES:"
+                    message['From'] = "DOSUIBAN:"
                     message["To"] = destination
                     message["Subject"] = "RESULTS FOR: " + username
                     msg = "Query results:"

@@ -32,11 +32,11 @@ function banner {
 
 function Preference {
 	printf "${WHITE}\nSELECT YOUR GUI-DEFAULT LANGUAGE\n(1)ENGLISH\n(2)ITALIANO\n(3)FRANÇAIS\n(4)BROWSER-LANGUAGE\n\n"
-	read -p"$GREEN[#MR.HOLMES#]$WHITE-->" Language
+	read -p"$GREEN[#DOSUIBAN#]$WHITE-->" Language
 	while [ "$Language" == "" ];
 		do
 		printf "${WHITE}\nSELECT YOUR GUI-DEFAULT LANGUAGE\n(1)ENGLISH\n(2)ITALIANO\n(3)FRANÇAIS\n(4)BROWSER-LANGUAGE\n\n"
-		read -p"$GREEN[#MR.HOLMES#]$WHITE-->" Language
+		read -p"$GREEN[#DOSUIBAN#]$WHITE-->" Language
 	done
 	if [ $Language == 1 ];
 		then
@@ -73,11 +73,11 @@ function Preference {
 	fi
 	printf "\n${WHITE}GUI-LANGUAGE:${GREEN}$mode\n"
 	printf "${WHITE}\nSELECT YOUR GUI-DEFAULT THEME\n(1)LIGHT\n(2)DARK\n(3)HIGH-CONTRAST\n\n"
-	read -p"$GREEN[#MR.HOLMES#]$WHITE-->" Theme
+	read -p"$GREEN[#DOSUIBAN#]$WHITE-->" Theme
 	while [ "$Language" == "" ];
 		do
 		printf "${WHITE}\nSELECT YOUR GUI-DEFAULT THEME\n(1)LIGHT\n(2)DARK\n(3)HIGH-CONTRAST\n\n"
-		read -p"$GREEN[#MR.HOLMES#]$WHITE-->" Language
+		read -p"$GREEN[#DOSUIBAN#]$WHITE-->" Language
 	done
 	if [ $Theme == 1 ];
 		then
@@ -121,49 +121,49 @@ function Packet_Installer {
 
 function Mail_Options {
 	printf "${BLUE}\n\n[?]${WHITE}WOULD YOU LIKE TO ENABLE EMAIL-OPTION(1)YES(2)NO\n\n"
-	read -p"$GREEN[#MR.HOLMES#]$WHITE-->" Opt
+	read -p"$GREEN[#DOSUIBAN#]$WHITE-->" Opt
 	while [ "$Opt" = "" ];
 		do
         printf "${BLUE}\n[?]${WHITE}WOULD YOU LIKE TO ENABLE EMAIL-OPTION(1)YES(2)NO\n\n"
-		read -p"$GREEN[#MR.HOLMES#]$WHITE-->" Opt
+		read -p"$GREEN[#DOSUIBAN#]$WHITE-->" Opt
 	done
 	if [ $Opt == 1 ];
 		then
 		status="Enabled"
 		printf "${WHITE}\n\nINSERT YOUR RECIPIENT EMAIL\n\n"
-		read -p"$GREEN[#MR.HOLMES#]$WHITE-->" recipient
+		read -p"$GREEN[#DOSUIBAN#]$WHITE-->" recipient
 		while [ "$recipient" = "" ];
 			do
 			printf "${WHITE}\nINSERT YOUR RECIPIENT EMAIL\n\n"
-			read -p"$GREEN[#MR.HOLMES#]$WHITE-->" recipient
+			read -p"$GREEN[#DOSUIBAN#]$WHITE-->" recipient
 		done
 		printf "${WHITE}\nINSERT YOUR EMAIL PASSWORD\n\n"
-		read -sp"$GREEN[#MR.HOLMES#]$WHITE-->" password
+		read -sp"$GREEN[#DOSUIBAN#]$WHITE-->" password
 		while [ "$password" = "" ];
 			do
 			printf "${WHITE}\nINSERT YOUR EMAIL PASSWORD\n\n"
-			read -sp"$GREEN[#MR.HOLMES#]$WHITE-->" password
+			read -sp"$GREEN[#DOSUIBAN#]$WHITE-->" password
 		done
 		printf "${WHITE}\n\nINSERT YOUR DESTINATION EMAIL\n\n"
-		read -p"$GREEN[#MR.HOLMES#]$WHITE-->" destination
+		read -p"$GREEN[#DOSUIBAN#]$WHITE-->" destination
 		while [ "$destination" = "" ];
 			do
 			printf "${WHITE}\nINSERT YOUR DESTINATION EMAIL\n\n"
-			read -p"$GREEN[#MR.HOLMES#]$WHITE-->" destination
+			read -p"$GREEN[#DOSUIBAN#]$WHITE-->" destination
 		done
 		printf "${WHITE}\nINSERT YOUR SMTP SERVER EX smtp.test.com\n\n"
-		read -p"$GREEN[#MR.HOLMES#]$WHITE-->" server
+		read -p"$GREEN[#DOSUIBAN#]$WHITE-->" server
 		while [ "$server" = "" ];
 			do
 			printf "${WHITE}\nINSERT YOUR SMTP SERVER EX smtp.test.com\n\n"
-			read -p"$GREEN[#MR.HOLMES#]$WHITE-->" server
+			read -p"$GREEN[#DOSUIBAN#]$WHITE-->" server
 		done
 		printf "${WHITE}\nINSERT YOUR SMTP SERVER PORT EX 768\n\n"
-		read -p"$GREEN[#MR.HOLMES#]$WHITE-->" port
+		read -p"$GREEN[#DOSUIBAN#]$WHITE-->" port
 		while [ "$port" = "" ];
 			do
 			printf "${WHITE}\nINSERT YOUR SMTP SERVER PORT \n\n"
-			read -p"$GREEN[#MR.HOLMES#]$WHITE-->" port
+			read -p"$GREEN[#DOSUIBAN#]$WHITE-->" port
 		done
 	elif [ $Opt == 2 ];
 		then
@@ -182,36 +182,36 @@ function Mail_Options {
 
 function Options {
 	printf "${WHITE}\nINSERT YOUR UPDATE-PASSWORD\n\n"
-	read -sp"$GREEN[#MR.HOLMES#]$WHITE-->" up_pass
+	read -sp"$GREEN[#DOSUIBAN#]$WHITE-->" up_pass
 	while [ "$up_pass" = "" ];
 		do
         printf "${WHITE}\nINSERT YOUR UPDATE-PASSWORD \n\n"
-        read -sp"$GREEN[#MR.HOLMES#]$WHITE-->" up_pass
+        read -sp"$GREEN[#DOSUIBAN#]$WHITE-->" up_pass
 	done
 	printf "${WHITE}\n\nINSERT YOUR WHO-IS-XMLAPI-KEY(LEAVE EMPTY IF YOU HAVENT ONE)\n\n"
-	read -p"$GREEN[#MR.HOLMES#]$WHITE-->" key
+	read -p"$GREEN[#DOSUIBAN#]$WHITE-->" key
 	if [ "$key" == "" ];
 		then
 		key="None"
 	fi
 	printf "${WHITE}\n\nINSERT YOUR PROXY_LIST FULL-PATH(LEAVE EMPTY IF YOU WANT THE DEFAULT LIST)\n\n"
-	read -p"$GREEN[#MR.HOLMES#]$WHITE-->" proxies
+	read -p"$GREEN[#DOSUIBAN#]$WHITE-->" proxies
 	if [ "$proxies" == "" ];
 		then
 		proxies="Proxies/Proxy_list.txt"
 	fi
 	printf "${WHITE}\n\nINSERT YOUR USERAGENT_LIST FULL-PATH(LEAVE EMPTY IF YOU WANT THE DEFAULT LIST)\n\n"
-	read -p"$GREEN[#MR.HOLMES#]$WHITE-->" useragent
+	read -p"$GREEN[#DOSUIBAN#]$WHITE-->" useragent
 	if [ "$useragent" == "" ];
 		then
 		useragent="Useragents/Useragent.txt"
 	fi
 	printf "${WHITE}\n\nWOULD YOU LIKE TO SAVE YOUR LOG SESSIONS(1)YES(2)NO\n\n"
-	read -p"$GREEN[#MR.HOLMES#]$WHITE-->" Logs
+	read -p"$GREEN[#DOSUIBAN#]$WHITE-->" Logs
 	while [ "$Logs" == "" ];
 		do
 		printf "${WHITE}\n\nWOULD YOU LIKE TO SAVE YOUR LOG SESSIONS(1)YES(2)NO\n\n"
-		read -p"$GREEN[#MR.HOLMES#]$WHITE-->" Logs
+		read -p"$GREEN[#DOSUIBAN#]$WHITE-->" Logs
 	done
 	if [ $Logs == 2 ];
 		then
@@ -220,11 +220,11 @@ function Options {
 		Logs="True"
 	fi
 	printf "${WHITE}\n\nWOULD YOU LIKE TO ACCESS YOUR DATABASE ON OTHER DEVICES(ON THE SAME NETWORK)?(1)YES(2)NO\n\n"
-	read -p"$GREEN[#MR.HOLMES#]$WHITE-->" Token
+	read -p"$GREEN[#DOSUIBAN#]$WHITE-->" Token
 	while [ "$Token" == "" ];
 		do
 		printf "${WHITE}\n\nWOULD YOU LIKE TO ACCESS YOUR DATABASE ON OTHER DEVICES(ON THE SAME NETWORK)?(1)YES(2)NO\n\n"
-		read -p"$GREEN[#MR.HOLMES#]$WHITE-->" Token
+		read -p"$GREEN[#DOSUIBAN#]$WHITE-->" Token
 	done
 	if [ $Token == 2 ];
 		then
@@ -233,11 +233,11 @@ function Options {
 		Token="True"
 	fi
 	printf "${WHITE}\n\nWOULD YOU LIKE TO ADD SOME CREDENTIALS FOR ACCESS THE DATABASE?(1)YES(2)NO\n\n"
-	read -p"$GREEN[#MR.HOLMES#]$WHITE-->" Access
+	read -p"$GREEN[#DOSUIBAN#]$WHITE-->" Access
 	while [ "$Access" == "" ];
 		do
 		printf "${WHITE}\n\nWOULD YOU LIKE TO ADD SOME CREDENTIALS FOR ACCESS THE DATABASE?(1)YES(2)NO\n\n"
-		read -p"$GREEN[#MR.HOLMES#]$WHITE-->" Access
+		read -p"$GREEN[#DOSUIBAN#]$WHITE-->" Access
 	done
 	if [ $Access == 2 ];
 		then
@@ -277,11 +277,11 @@ function Options {
 }'>GUI/Credentials/Users.json
 	fi
 	printf "${WHITE}\nSELECT YOUR CLI-DEFAULT LANGUAGE\n(1)ENGLISH\n(2)ITALIANO\n(3)FRANÇAIS\n\n"
-	read -p"$GREEN[#MR.HOLMES#]$WHITE-->" Language
+	read -p"$GREEN[#DOSUIBAN#]$WHITE-->" Language
 	while [ "$Language" == "" ];
 		do
 		printf "${WHITE}\nSELECT YOUR CLI-DEFAULT LANGUAGE\n(1)ENGLISH\n(2)ITALIANO\n(3)FRANÇAIS\n\n"
-		read -p"$GREEN[#MR.HOLMES#]$WHITE-->" Language
+		read -p"$GREEN[#DOSUIBAN#]$WHITE-->" Language
 	done
 	if [ $Language == 1 ];
 		then
@@ -300,11 +300,11 @@ function Options {
 	fi
 	printf "\n${WHITE}CLI-LANGUAGE:${GREEN}$mode\n"
 	printf "${WHITE}\nSELECT YOUR DATE-FORMAT\n(1)EUROPE(DD/MM/YYYY)\n(2)AMERICA'USA'(MM/DD/YYYY)\n(3)ASIA(YYYY/MM/DD)\n\n"
-	read -p"$GREEN[#MR.HOLMES#]$WHITE-->" DateFormat
+	read -p"$GREEN[#DOSUIBAN#]$WHITE-->" DateFormat
 	while [ "$DateFormat" == "" ];
 		do
 		printf "${WHITE}\nSELECT YOUR DATE-FORMAT\n(1)EUROPE(DD/MM/YYYY)\n(2)AMERICA'USA'(MM/DD/YYYY)\n(3)ASIA(YYYY/MM/DD)\n\n"
-		read -p"$GREEN[#MR.HOLMES#]$WHITE-->" DateFormat
+		read -p"$GREEN[#DOSUIBAN#]$WHITE-->" DateFormat
 	done
 	if [ $DateFormat == 1 ];
 		then
@@ -325,7 +325,7 @@ function Options {
 	Preference
 	printf "${BLUE}\nCREATING CONFIGURATION FILE"
 	cd Configuration
-	echo ";THIS FILE HAS BEEN GENERATE BY MR.HOLMES INSTALLER">Configuration.ini
+	echo ";THIS FILE HAS BEEN GENERATE BY DOSUIBAN INSTALLER">Configuration.ini
 	echo ";CHANGE THESE VALUE IF YOU WANT TO UPDATE YOUR SETTINGS FROM HERE">>Configuration.ini
 	echo ";BUT DO NOT CHANGE THE PARAMETERS NAME">>Configuration.ini
 	echo "">>Configuration.ini
@@ -377,7 +377,7 @@ echo '{
         "Preference":"Browser"
     }
 }'>GUI/Language/Language.json
-	echo ";THIS FILE HAS BEEN GENERATE BY MR.HOLMES INSTALLER">Configuration/Configuration.ini
+	echo ";THIS FILE HAS BEEN GENERATE BY DOSUIBAN INSTALLER">Configuration/Configuration.ini
 	echo ";CHANGE THESE VALUE IF YOU WANT TO UPDATE YOUR SETTINGS FROM HERE">>Configuration/Configuration.ini
 	echo ";BUT DO NOT CHANGE THE PARAMETERS NAME">>Configuration/Configuration.ini
 	echo "">>Configuration/Configuration.ini
@@ -390,7 +390,7 @@ echo '{
 	echo "port= None">>Configuration/Configuration.ini
 	echo "">>Configuration/Configuration.ini
 	echo "[Settings]">>Configuration/Configuration.ini
-	echo "password = Holmes">>Configuration/Configuration.ini
+	echo "password = Dosuiban">>Configuration/Configuration.ini
 	echo "api_key = None">>Configuration/Configuration.ini
 	echo "proxy_list" = "Proxies/Proxy_list.txt">>Configuration/Configuration.ini
 	echo "useragent_list" = "Useragents/Useragent.txt">>Configuration/Configuration.ini
@@ -401,7 +401,7 @@ echo '{
 	rm Configuration/UNTILED.txt &> /dev/null
 	printf "\n\n${WHITE}EMAIL-SERVER:${GREEN}DISABLED\n"
 	printf "\n${WHITE}SHOW-LOGS:${GREEN}FALSE\n"
-	printf "\n${WHITE}UPDATE-PASSWORD:${GREEN}Holmes\n"
+	printf "\n${WHITE}UPDATE-PASSWORD:${GREEN}Dosuiban\n"
 	printf "\n${WHITE}API-KEY:${GREEN}None\n"
 	printf "\n${WHITE}PROXIES:${GREEN}DEFAULT\n"
 	printf "\n${WHITE}USERAGENTS:${GREEN}DEFAULT\n"
@@ -418,20 +418,20 @@ function installer {
 	Fold=${PWD##*/}
 	printf "${GREEN}\n\n[+]${WHITE}LINUX DISTRIBUTION FOUND:$DIST${GREEN}[+]"
 	printf "${BLUE}\n\nWELCOME TO THE INSTALLATION MANAGER WOULD YOU LIKE TO BEGIN(1)YES(2)NO\n\n"
-	read -p "$GREEN[#MR.HOLMES#]$WHITE-->" confvar
+	read -p "$GREEN[#DOSUIBAN#]$WHITE-->" confvar
 	while [ "$confvar" == "" ];
 		do
 		printf "${BLUE}\n\nWELCOME TO THE INSTALLATION MANAGER WOULD YOU LIKE TO BEGIN(1)YES(2)NO\n\n"
-		read -p "$GREEN[#MR.HOLMES#]$WHITE-->" confvar
+		read -p "$GREEN[#DOSUIBAN#]$WHITE-->" confvar
 	done
 	if [ $confvar == 1 ];
 		then
 		printf "${BLUE}\nWOULD YOU LIKE TO SET(1)MANUAL-INSTALLATION(2)AUTO-INSTALLATION\n\n"
-		read -p "$GREEN[#MR.HOLMES#]$WHITE-->" selected
+		read -p "$GREEN[#DOSUIBAN#]$WHITE-->" selected
 		while [ "$selected" == "" ];
 			do
 			printf "${BLUE}\n\nWOULD YOU LIKE TO SET(1)MANUAL-INSTALLATION(2)AUTO-INSTALLATION\n\n"
-			read -p "$GREEN[#MR.HOLMES#]$WHITE-->" selected
+			read -p "$GREEN[#DOSUIBAN#]$WHITE-->" selected
 		done
 		if [ $selected == 1 ];
 			then
@@ -458,7 +458,7 @@ function installer {
 		echo "Desktop">$Fold/Display/Display.txt
 		sleep 2
 		printf "${GREEN}\n\n[+]${WHITE}PROGRAM INSTALLED CORRECTLY${GREEN}[+]"
-		printf "${LIGHTGREEN}\n\nTHANK YOU FOR HAVE INSTALLED Mr.Holmes\n\n"
+		printf "${LIGHTGREEN}\n\nTHANK YOU FOR HAVE INSTALLED DOSUIBAN\n\n"
 		exit 0
 	fi
 	printf "\n${BLUE}INSTALLATION INTERRUPTED EXIT...\n\n"

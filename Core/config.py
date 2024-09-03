@@ -31,16 +31,16 @@ class Config:
     def modify_recipient():
         os.chdir(dest)
         alert = int(input(
-            Font.Color.RED + "\n[!]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Email", "Choice") + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+            Font.Color.RED + "\n[!]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Email", "Choice") + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
         if alert == 1:
             if os.path.isfile(nomefile):
                 Parser = ConfigParser()
                 Parser.read(nomefile)
                 recipient = str(input(
-                    Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Email", "Modify") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                    Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Email", "Modify") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                 while recipient == "":
                     recipient = str(input(
-                        Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Email", "Modify") + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                        Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Email", "Modify") + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                 if recipient == "None":
                     out = input(Language.Translation.Translate_Language(
                         filename, "Configuration", "Email", "NotChanged"))
@@ -65,16 +65,16 @@ class Config:
     def modify_password():
         os.chdir(dest)
         alert = int(input(
-            Font.Color.RED + "\n[!]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Password", "Choice") + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+            Font.Color.RED + "\n[!]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Password", "Choice") + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
         if alert == 1:
             if os.path.isfile(nomefile):
                 Parser = ConfigParser()
                 Parser.read(nomefile)
                 passw = getpass.getpass(Font.Color.WHITE + Language.Translation.Translate_Language(
-                    filename, "Configuration", "Password", "Modify") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->")
+                    filename, "Configuration", "Password", "Modify") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->")
                 while passw == "":
                     passw = getpass.getpass(
-                        Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Password", "Modify") + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->")
+                        Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Password", "Modify") + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->")
                 if passw == "None":
                     out = input(
                         Language.Translation.Translate_Language(filename, "Configuration", "Password", "NotChanged"))
@@ -99,26 +99,26 @@ class Config:
     def modify_destination():
         os.chdir(dest)
         alert = int(input(
-            Font.Color.RED + "\n[!]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Email", "Choice2") + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+            Font.Color.RED + "\n[!]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Email", "Choice2") + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
         if alert == 1:
             if os.path.isfile(nomefile):
                 Parser = ConfigParser()
                 Parser.read(nomefile)
                 destination = str(input(
-                    Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Email", "Modify2") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                    Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Email", "Modify2") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                 while destination == "":
                     destination = str(input(
-                        Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Email", "Modify2") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                        Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Email", "Modify2") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                 if destination == "None":
                     out = input(
-                        Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Email", "NotChanged2") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->")
+                        Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Email", "NotChanged2") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->")
                     os.chdir("../")
                 else:
                     Parser.set("Smtp", "destination", destination)
                     with open(nomefile, 'w') as configfile:
                         Parser.write(configfile)
                     print(Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration",
-                          "Email", "Modify2") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->")
+                          "Email", "Modify2") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->")
                     out = input(Language.Translation.Translate_Language(
                         filename, "Configuration", "Main", "Exit"))
                     os.chdir("../")
@@ -133,16 +133,16 @@ class Config:
     def modify_port():
         os.chdir(dest)
         alert = int(input(
-            Font.Color.RED + "\n[!]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Smtp", "Choice2") + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+            Font.Color.RED + "\n[!]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Smtp", "Choice2") + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
         if alert == 1:
             if os.path.isfile(nomefile):
                 Parser = ConfigParser()
                 Parser.read(nomefile)
                 port = str(input(
-                    Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Smtp", "Modify2") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                    Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Smtp", "Modify2") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                 while port == "":
                     port = str(input(
-                        Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Smtp", "Modify2") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                        Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Smtp", "Modify2") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                 if port == "None":
                     out = input(
                         Language.Translation.Translate_Language(filename, "Configuration", "Smtp", "NotChanged2"))
@@ -167,16 +167,16 @@ class Config:
     def modify_server():
         os.chdir(dest)
         alert = int(input(
-            Font.Color.RED + "\n[!]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Email", "Choice") + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+            Font.Color.RED + "\n[!]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Email", "Choice") + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
         if alert == 1:
             if os.path.isfile(nomefile):
                 Parser = ConfigParser()
                 Parser.read(nomefile)
                 server = str(input(
-                    Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Email", "Modify") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                    Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Email", "Modify") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                 while server == "":
                     server = str(input(
-                        Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Email", "Modify") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                        Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Email", "Modify") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                 if server == "None":
                     out = input(
                         Language.Translation.Translate_Language(filename, "Configuration", "Email", "NotChanged"))
@@ -201,16 +201,16 @@ class Config:
     def modify_path():
         os.chdir(dest)
         alert = int(input(
-            Font.Color.RED + "\n[!]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Update-Path", "Choice") + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+            Font.Color.RED + "\n[!]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Update-Path", "Choice") + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
         if alert == 1:
             if os.path.isfile:
                 Parser = ConfigParser()
                 Parser.read(nomefile)
                 path = str(input(
-                    Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Update-Path", "Modify") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                    Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Update-Path", "Modify") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                 while path == "":
                     path = str(input(
-                        Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Update-Path", "Modify") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                        Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Update-Path", "Modify") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                 if path == "None":
                     out = input(
                         "")
@@ -235,16 +235,16 @@ class Config:
     def modify_update_pass():
         os.chdir(dest)
         alert = int(input(
-            Font.Color.RED + "\n[!]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Password", "Choice2") + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+            Font.Color.RED + "\n[!]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Password", "Choice2") + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
         if alert == 1:
             if os.path.isfile:
                 Parser = ConfigParser()
                 Parser.read(nomefile)
                 passw = getpass.getpass(
-                    Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Password", "Modify2") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->")
+                    Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Password", "Modify2") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->")
                 while passw == "":
                     passw = str(input(
-                        Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Password", "Modify2") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                        Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Password", "Modify2") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                 if passw == "None":
                     out = input(
                         "\n")
@@ -268,16 +268,16 @@ class Config:
     def modify_key():
         os.chdir(dest)
         alert = int(input(
-            Font.Color.RED + "\n[!]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Api", "Choice") + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+            Font.Color.RED + "\n[!]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Api", "Choice") + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
         if alert == 1:
             if os.path.isfile(nomefile):
                 Parser = ConfigParser()
                 Parser.read(nomefile)
                 key = str(input(
-                    Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Api", "Modify") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                    Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Api", "Modify") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                 while key == "":
                     key = str(input(
-                        Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Api", "Modify") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                        Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Api", "Modify") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                 if key == "None":
                     out = input(Language.Translation.Translate_Language(
                         filename, "Configuration", "Api", "NotChanged"))
@@ -302,16 +302,16 @@ class Config:
     def modify_proxy():
         os.chdir(dest)
         alert = int(input(
-            Font.Color.RED + "\n[!]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Proxy", "Choice") + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+            Font.Color.RED + "\n[!]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Proxy", "Choice") + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
         if alert == 1:
             if os.path.isfile(nomefile):
                 Parser = ConfigParser()
                 Parser.read(nomefile)
                 proxy_path = str(input(
-                    Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Proxy", "Modify") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                    Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Proxy", "Modify") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                 while proxy_path == "":
                     proxy_path = str(input(
-                        Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Proxy", "Modify") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                        Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Proxy", "Modify") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                 if proxy_path == "None":
                     out = input(Language.Translation.Translate_Language(
                         filename, "Configuration", "Proxy", "NotChanged"))
@@ -336,13 +336,13 @@ class Config:
     def modify_Log():
         os.chdir(dest)
         alert = int(input(
-            Font.Color.RED + "\n[!]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Logs", "Choice") + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+            Font.Color.RED + "\n[!]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Logs", "Choice") + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
         if alert == 1:
             if os.path.isfile(nomefile):
                 Parser = ConfigParser()
                 Parser.read(nomefile)
                 Logs = int(input(
-                    Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Logs", "Modify") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                    Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Logs", "Modify") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                 if Logs == 1:
                     Logs = "True"
                 elif Logs == 2:
@@ -369,13 +369,13 @@ class Config:
     def modify_Database_Visibility():
         os.chdir(dest)
         alert = int(input(
-            Font.Color.RED + "\n[!]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Database", "Choice") + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+            Font.Color.RED + "\n[!]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Database", "Choice") + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
         if alert == 1:
             if os.path.isfile(nomefile):
                 Parser = ConfigParser()
                 Parser.read(nomefile)
                 Data = int(input(
-                    Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Database", "Modify") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                    Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Database", "Modify") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                 if Data == 1:
                     Data = "True"
                 elif Data == 2:
@@ -402,16 +402,16 @@ class Config:
     def modify_Language():
         os.chdir(dest)
         alert = int(input(
-            Font.Color.RED + "\n[!]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Lang", "Choice") + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+            Font.Color.RED + "\n[!]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Lang", "Choice") + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
         if alert == 1:
             if os.path.isfile(nomefile):
                 Parser = ConfigParser()
                 Parser.read(nomefile)
                 Lang = str(input(
-                    Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Lang", "Modify") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                    Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Lang", "Modify") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                 while Lang == "":
                     Lang = str(input(
-                        Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Lang", "Modify") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                        Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Lang", "Modify") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                 if Lang == "None":
                     out = input(Language.Translation.Translate_Language(
                         filename, "Configuration", "Lang", "NotChanged"))
@@ -436,13 +436,13 @@ class Config:
     def modify_Email_Status():
         os.chdir(dest)
         alert = int(input(
-            Font.Color.RED + "\n[!]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Mail_Status", "Choice") + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+            Font.Color.RED + "\n[!]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Mail_Status", "Choice") + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
         if alert == 1:
             if os.path.isfile(nomefile):
                 Parser = ConfigParser()
                 Parser.read(nomefile)
                 Enabled = int(input(
-                    Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Mail_Status", "Modify") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                    Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Mail_Status", "Modify") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                 if Enabled == 1:
                     Data = "Enabled"
                 elif Enabled == 2:
@@ -469,13 +469,13 @@ class Config:
     def modify_Date():
         os.chdir(dest)
         alert = int(input(
-            Font.Color.RED + "\n[!]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "DateFormat", "Choice") + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+            Font.Color.RED + "\n[!]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "DateFormat", "Choice") + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
         if alert == 1:
             if os.path.isfile(nomefile):
                 Parser = ConfigParser()
                 Parser.read(nomefile)
                 Format = int(input(
-                    Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "DateFormat", "Modify") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                    Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "DateFormat", "Modify") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                 if Format == 1:
                     Date = "eu"
                 elif Format == 2:
@@ -504,16 +504,16 @@ class Config:
     def modify_Useragent():
         os.chdir(dest)
         alert = int(input(
-            Font.Color.RED + "\n[!]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Useragent", "Choice") + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+            Font.Color.RED + "\n[!]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Useragent", "Choice") + Font.Color.RED + "[!]" + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
         if alert == 1:
             if os.path.isfile(nomefile):
                 Parser = ConfigParser()
                 Parser.read(nomefile)
                 proxy_path = str(input(
-                    Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Useragent", "Modify") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                    Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Useragent", "Modify") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                 while proxy_path == "":
                     proxy_path = str(input(
-                        Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Useragent", "Modify") + Font.Color.GREEN + "\n\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                        Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Configuration", "Useragent", "Modify") + Font.Color.GREEN + "\n\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                 if proxy_path == "None":
                     out = input(Language.Translation.Translate_Language(
                         filename, "Configuration", "Useragent", "NotChanged"))
@@ -556,7 +556,7 @@ class Config:
                     filename, "Configuration", "Main", "Text"))
                 print(Font.Color.WHITE + options)
                 sce = int(input(Font.Color.GREEN +
-                                "\n[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                                "\n[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                 if sce == 1:
                     Config.modify_recipient()
                 elif sce == 2:

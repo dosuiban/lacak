@@ -25,13 +25,13 @@ public class Notification{
 
     public Notification(){
         int Width,Height ;
-        JOptionPane a = new JOptionPane("MR.HOLMES SCAN COMPLETED",JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane a = new JOptionPane("DOSUIBAN SCAN COMPLETED",JOptionPane.INFORMATION_MESSAGE);
         JDialog d =  a.createDialog(null);
         Width = GetWidht();
         Height = GetHight();
         d.setLocation(Width,Height);
         d.setVisible(true);
-        d.setTitle("MR.HOLMES");
+        d.setTitle("DOSUIBAN");
         d.setResizable(false);
         d.dispose(); 
     }

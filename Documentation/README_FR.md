@@ -3,18 +3,18 @@
 </p>
 
 <p align = "center">
-  <img src = "https://img.shields.io/github/stars/Lucksi/Mr.Holmes">
-  <img src = "https://img.shields.io/github/forks/Lucksi/Mr.Holmes">
+  <img src = "https://img.shields.io/github/stars/Lucksi/DOSUIBAN">
+  <img src = "https://img.shields.io/github/forks/Lucksi/DOSUIBAN">
   <img src = "https://img.shields.io/badge/Maintained%3F-yes-green.svg">
-  <img src = "https://img.shields.io/github/license/Lucksi/Mr.Holmes">
-  <img src = "https://img.shields.io/github/repo-size/Lucksi/Mr.Holmes">
-  <img src= "https://img.shields.io/github/languages/count/Lucksi/Mr.Holmes">
-  <img src = "https://visitor-badge.laobi.icu/badge?page_id=Lucksi.Mr.Holmes">
+  <img src = "https://img.shields.io/github/license/Lucksi/DOSUIBAN">
+  <img src = "https://img.shields.io/github/repo-size/Lucksi/DOSUIBAN">
+  <img src= "https://img.shields.io/github/languages/count/Lucksi/DOSUIBAN">
+  <img src = "https://visitor-badge.laobi.icu/badge?page_id=Lucksi.DOSUIBAN">
 </p>
 
-# :mag: Mr.Holmes 
+# :mag: DOSUIBAN 
 
-**Mr.Holmes est un outil de collecte d'informations (OSINT). Dont le but principal est d'obtenir des informations sur les domaines, les noms d'utilisateur, les e-mails et les numéros de téléphone à l'aide de ressources publiques disponibles sur le net, en utilisant également des techniques telles que Google / Yandex dorks pour des recherches encore plus spécifiques.certains proxies pour faire vos demandes anonyme et utilisez une API WhoIs pour obtenir plus d'informations sur un domaine.**
+**DOSUIBAN est un outil de collecte d'informations (OSINT). Dont le but principal est d'obtenir des informations sur les domaines, les noms d'utilisateur, les e-mails et les numéros de téléphone à l'aide de ressources publiques disponibles sur le net, en utilisant également des techniques telles que Google / Yandex dorks pour des recherches encore plus spécifiques.certains proxies pour faire vos demandes anonyme et utilisez une API WhoIs pour obtenir plus d'informations sur un domaine.**
 <br>
 
 # :heavy_exclamation_mark: DISCLAIMER
@@ -34,8 +34,8 @@
 
 # :heavy_check_mark: INSTALLATION LINUX/MAC:
 ```bash
-git clone https://github.com/Lucksi/Mr.Holmes
-cd Mr.Holmes
+git clone https://github.com/Lucksi/DOSUIBAN
+cd DOSUIBAN
 sudo apt-get update
 sudo chmod +x install.sh
 sudo bash install.sh
@@ -45,17 +45,17 @@ sudo bash install.sh
 # :heavy_check_mark: INSTALLATION WINDOWS(1°WAY):
 **Si git est installé sur votre ordinateur Windows, vous pouvez exécuter les commandes suivantes:**
 ```cmd
-git clone https://github.com/Lucksi/Mr.Holmes
-cd Mr.Holmes
+git clone https://github.com/Lucksi/DOSUIBAN
+cd DOSUIBAN
 Install.cmd
 ```
 <br>
 
 # :heavy_check_mark: INSTALLATION WINDOWS(2°WAY):
-**Si vous téléchargez le fichier zip de Mr.Holmes, vous devez d'abord le décompresser, puis exécuter les commandes suivantes:**
+**Si vous téléchargez le fichier zip de DOSUIBAN, vous devez d'abord le décompresser, puis exécuter les commandes suivantes:**
 ```cmd
-ren Mr.Holmes-master Mr.Holmes
-cd Mr.Holmes
+ren DOSUIBAN-master DOSUIBAN
+cd DOSUIBAN
 Install.cmd
 ```
 <br>
@@ -63,8 +63,8 @@ Install.cmd
 # :heavy_check_mark: INSTALLATION TERMUX:
 ```bash
 pkg install proot
-git clone https://github.com/Lucksi/Mr.Holmes
-cd Mr.Holmes
+git clone https://github.com/Lucksi/DOSUIBAN
+cd DOSUIBAN
 proot -0 chmod +x install_Termux.sh
 ./install_Termux.sh
 ```
@@ -111,7 +111,7 @@ proot -0 chmod +x install_Termux.sh
 <br>
 
 # LISTE DES VERSIONS:
-    https://lucksi.github.io/Mr.Holmes/Pages/versions.html
+    https://lucksi.github.io/DOSUIBAN/Pages/versions.html
 <br>
 
 # :heavy_check_mark: GUI DARK/LIGHT MODE:
@@ -342,7 +342,7 @@ edit Language.json
 ## <p align = center> STARGAZERS OVER TIME 
 
 
-[![Stargazers over time](https://starchart.cc/Lucksi/Mr.Holmes.svg)](https://starchart.cc/Lucksi/Mr.Holmes)
+[![Stargazers over time](https://starchart.cc/Lucksi/DOSUIBAN.svg)](https://starchart.cc/Lucksi/DOSUIBAN)
 
 <br>
 

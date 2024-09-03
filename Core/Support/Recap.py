@@ -188,7 +188,7 @@ class Stats:
             filename, "Report", "Recap", "Summary").format(Font.Color.GREEN + username + Font.Color.WHITE, Font.Color.GREEN + str(found) + Font.Color.WHITE, Font.Color.GREEN + str(Count) + Font.Color.WHITE, Font.Color.GREEN + username + Font.Color.WHITE, Font.Color.GREEN + str(Total), "%" + Font.Color.WHITE))
         f = open(report, "w")
         f.write(
-            "REPORT CREATED BY MR.HOLMES\n\nGENERATING SUMMARY REPORT...\n" + Percentual)
+            "REPORT CREATED BY DOSUIBAN\n\nGENERATING SUMMARY REPORT...\n" + Percentual)
         f.close()
         if subject == "USERNAME":
             print(Font.Color.GREEN +

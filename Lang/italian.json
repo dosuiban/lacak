@@ -31,7 +31,7 @@
         "KeyC": "SEMBRA CHE TU ABBIA PREMUTO CTRL-C STO USCENDO...",
         "Map": "MAPPA SALVATA SU: {}",
         "DateFormat": "FORMATO-DATA:{}",
-        "Generated": "FILE GENERATO DA MR.HOLMES",
+        "Generated": "FILE GENERATO DA DOSUIBAN",
         "DisplayError": "SEMBRA CHE SIA STATO INSERITO UN VALORE NON VALIDO ACCETATI SOLO 'Desktop' O 'Mobile'\n\nUSCITA..."
     },
 
@@ -77,7 +77,7 @@
         "Port": "INSERISCI UN HOST",
         "Email": "INSERISCI UN INDIRIZZO E-MAIL",
         "Param": "AGGIUNGI PARAMETRO",
-        "Exit": "\nGRAZIE PER AVER USATO MR.HOLMES.. BYE:)\n",
+        "Exit": "\nGRAZIE PER AVER USATO DOSUIBAN.. BYE:)\n",
         "Value_Error": "SEMBRA CHE TU ABBIA PREMUTO UN'OPZIONE SBAGLIATA USCITA..."
     },
 
@@ -380,9 +380,9 @@
         "Wrong": "PASSWOR ERRATA HAI {} TENTATIVI",
         "Failed": "HAI {} TENTATIVI PREMI INVIO PER CONTINUE",
         "Choice": "VUOI CANCELLARE I VECCHI FILE?(1)SI(2)NO\n\n",
-        "Delete": "\nSTO ELIMINANDO I VECCHI FILE DI MR.HOLMES",
+        "Delete": "\nSTO ELIMINANDO I VECCHI FILE DI DOSUIBAN",
         "Keep": "\nVECCHI FILE NON ELIMINATI",
-        "Success": "\nMR.HOLMES AGGIORNATO CORRETTAMENTE"
+        "Success": "\nDOSUIBAN AGGIORNATO CORRETTAMENTE"
     },
 
     "Decoding":{
@@ -416,7 +416,7 @@
         {
             "Default":{
                 "Date": "SCANNING ESEGUITO IN DATA:\n{}",
-                "By": "\nSCANNING ESEGUITO CON Mr.Holmes"
+                "By": "\nSCANNING ESEGUITO CON DOSUIBAN"
             },
 
             "Username":{

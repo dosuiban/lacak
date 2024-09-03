@@ -109,10 +109,10 @@ class Search:
             
             if fold == "People":
                 opt = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Username", "Default", "Scraper") +
-                                Font.Color.GREEN + "[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                                Font.Color.GREEN + "[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                 if opt == 1:
                     check = str(input(Font.Color.GREEN + "\n[+]" + Font.Color.WHITE + "INSERT THE USERNANE TO CHECK\n\n" +
-                                    Font.Color.GREEN + "[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                                    Font.Color.GREEN + "[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                     if check not in List:
                         pass
                     else:
@@ -231,10 +231,10 @@ class Search:
             
             if fold == "People":
                 opt = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Username", "Default", "Scraper") +
-                                Font.Color.GREEN + "[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                                Font.Color.GREEN + "[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                 if opt == 1:
                     check = str(input(Font.Color.GREEN + "\n[+]" + Font.Color.WHITE + "INSERT THE USERNANE TO CHECK\n\n" +
-                                    Font.Color.GREEN + "[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                                    Font.Color.GREEN + "[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                     if check not in List:
                         pass
                     else:
@@ -334,10 +334,10 @@ class Search:
             
             if fold == "People":
                 opt = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Username", "Default", "Scraper") +
-                                Font.Color.GREEN + "[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                                Font.Color.GREEN + "[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                 if opt == 1:
                     check = str(input(Font.Color.GREEN + "\n[+]" + Font.Color.WHITE + "INSERT THE USERNANE TO CHECK\n\n" +
-                                    Font.Color.GREEN + "[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                                    Font.Color.GREEN + "[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                     if check not in List:
                         pass
                     else:
@@ -432,10 +432,10 @@ class Search:
                 i = i +1
             if fold == "People":
                 opt = int(input(Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Username", "Default", "Scraper") +
-                                Font.Color.GREEN + "[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                                Font.Color.GREEN + "[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                 if opt == 1:
                     check = str(input(Font.Color.GREEN + "\n[+]" + Font.Color.WHITE + "INSERT THE USERNANE TO CHECK\n\n" +
-                                    Font.Color.GREEN + "[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
+                                    Font.Color.GREEN + "[#DOSUIBAN#]" + Font.Color.WHITE + "-->"))
                     if check not in List:
                         pass
                     else:
