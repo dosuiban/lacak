@@ -65,7 +65,7 @@ class Main:
         print(Font.Color.WHITE + u)
         print(Font.Color.GREEN + text
               +
-              Font.Color.WHITE + "| A COMPLETE OSINT TOOL:)      " + Font.Color.BANNER + "DOSUIBANIBAN CYBER TEAM" + Font.Color.RESET + Font.Color.WHITE + "                      |\n|                                                                   |")
+              Font.Color.WHITE + "| A COMPLETE OSINT TOOL:)      " + Font.Color.BANNER + "DOSUIBAN CYBER TEAM" + Font.Color.RESET + Font.Color.WHITE + "                      |\n|                                                                   |")
         print(Font.Color.WHITE + "|[+]" + Font.Color.GREEN + "VERSION:" + version +      Font.Color.WHITE +  "\t\t\tCURRENT-DATE: {}".format(Font.Color.GREEN + Date1) + 
               Font.Color.WHITE + "    |")
         print(Font.Color.WHITE +
@@ -86,7 +86,7 @@ class Main:
         f.close()
         print(Font.Color.GREEN + text)
         print(Font.Color.WHITE + "A COMPLETE OSINT TOOL:)      " +
-              Font.Color.BANNER + "DOSUIBANIBAN CYBER TEAM" + Font.Color.RESET)
+              Font.Color.BANNER + "DOSUIBAN CYBER TEAM" + Font.Color.RESET)
         print(Font.Color.WHITE + "\n[+]" +
               Font.Color.GREEN + "VERSION:" + version)
 
