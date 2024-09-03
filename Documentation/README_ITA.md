@@ -3,12 +3,12 @@
 </p>
 
 <p align = "center">
-  <img src = "https://img.shields.io/github/stars/Lucksi/DOSUIBAN">
-  <img src = "https://img.shields.io/github/forks/Lucksi/DOSUIBAN">
+  <img src = "https://img.shields.io/github/stars/dosuiban/lacak">
+  <img src = "https://img.shields.io/github/forks/dosuiban/lacak">
   <img src = "https://img.shields.io/badge/Maintained%3F-yes-green.svg">
-  <img src = "https://img.shields.io/github/license/Lucksi/DOSUIBAN">
-  <img src = "https://img.shields.io/github/repo-size/Lucksi/DOSUIBAN">
-  <img src= "https://img.shields.io/github/languages/count/Lucksi/DOSUIBAN">
+  <img src = "https://img.shields.io/github/license/dosuiban/lacak">
+  <img src = "https://img.shields.io/github/repo-size/dosuiban/lacak">
+  <img src= "https://img.shields.io/github/languages/count/dosuiban/lacak">
   <img src = "https://visitor-badge.laobi.icu/badge?page_id=Lucksi.DOSUIBAN">
 </p>
 
@@ -34,7 +34,7 @@
 
 # :heavy_check_mark: INSTALLAZIONE LINUX/MAC:
 ```bash
-git clone https://github.com/Lucksi/DOSUIBAN
+git clone https://github.com/dosuiban/lacak
 cd DOSUIBAN
 sudo apt-get update
 sudo chmod +x install.sh
@@ -45,7 +45,7 @@ sudo bash install.sh
 # :heavy_check_mark: INSTALLAZIONE WINDOWS (1°MODO):
 **Se hai installato sulla tua macchina windows git puoi eseguire i seguenti comandi:**
 ```cmd
-git clone https://github.com/Lucksi/DOSUIBAN
+git clone https://github.com/dosuiban/lacak
 cd DOSUIBAN
 Install.cmd
 ```
@@ -63,7 +63,7 @@ Install.cmd
 # :heavy_check_mark: INSTALLAZIONE TERMUX:
 ```bash
 pkg install proot
-git clone https://github.com/Lucksi/DOSUIBAN
+git clone https://github.com/dosuiban/lacak
 cd DOSUIBAN
 proot -0 chmod +x install_Termux.sh
 ./install_Termux.sh
@@ -344,7 +344,7 @@ edit Language.json
 ## <p align = center> STARGAZERS OVER TIME 
 
 
-[![Stargazers over time](https://starchart.cc/Lucksi/DOSUIBAN.svg)](https://starchart.cc/Lucksi/DOSUIBAN)
+[![Stargazers over time](https://starchart.cc/dosuiban/lacak.svg)](https://starchart.cc/dosuiban/lacak)
 
 <br>
 

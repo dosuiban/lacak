@@ -37,7 +37,7 @@ function update {
   Update_path=$(sed -nr "/^\[Settings\]/ { :l /^path[ ]*=/ { s/.*=[ ]*//; p; q;}; n; b l;}" <Configuration/Configuration.ini)
   cd $Update_path
   mv DOSUIBAN DOSUIBAN2  &>/dev/null
-  git clone https://github.com/Lucksi/DOSUIBAN &>/dev/null | printf "$WHITE\nUPDATING DOSUIBAN..\n"
+  git clone https://github.com/dosuiban/lacak &>/dev/null | printf "$WHITE\nUPDATING DOSUIBAN..\n"
 
   if [ $? -eq  0 ];
     then

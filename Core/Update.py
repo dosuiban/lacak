@@ -48,7 +48,7 @@ class Downloader:
             os.system("rename DOSUIBAN DOSUIBAN_Old 2>NUL >NUL")
         else:
             os.system("mv DOSUIBAN DOSUIBAN_Old &>/dev/null")
-        os.system("git clone https://github.com/Lucksi/DOSUIBAN")
+        os.system("git clone https://github.com/dosuiban/lacak")
         choice = int(input(Font.Color.BLUE + "\n[+]" + Font.Color.WHITE +
                      Language.Translation.Translate_Language(filename, "Update", "Choice", "None")))
         if choice == 1:
